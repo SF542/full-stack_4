@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#56534c">
+  <meta name="description" content="Gustoso bakery — fresh bread, handmade cakes, pancakes and breakfast, made with love.">
+  <title>Gustoso — Pastry with love</title>
+  <link rel="icon" href="assets/images/bread-icon.png" type="image/png">
+  <link rel="stylesheet/less" type="text/css" href="styles/main.less">
+  <script src="node_modules/less/dist/less.min.js"></script>
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#welcome" aria-label="Gustoso home">Gustoso</a>
+      <button class="menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false" aria-label="Open navigation"><span></span><span></span><span></span></button>
+      <nav class="navigation" id="main-navigation" aria-label="Main navigation">
+        <a href="#welcome">Welcome</a><span aria-hidden="true">~</span>
+        <a href="#menu">Menu</a><span aria-hidden="true">~</span>
+        <a href="#breakfast">Reservations</a><span aria-hidden="true">~</span>
+        <a href="#cakes">News</a><span aria-hidden="true">~</span>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="socials" role="group" aria-label="Social media">
+        <a href="https://twitter.com/" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 5.9a8 8 0 0 1-2.4.7 4.2 4.2 0 0 0 1.8-2.3 8.3 8.3 0 0 1-2.6 1 4.1 4.1 0 0 0-7 3.8A11.7 11.7 0 0 1 3.3 4.8a4.1 4.1 0 0 0 1.3 5.5 4 4 0 0 1-1.8-.5 4.1 4.1 0 0 0 3.3 4 4.2 4.2 0 0 1-1.9.1 4.1 4.1 0 0 0 3.8 2.9A8.3 8.3 0 0 1 2 18.5a11.7 11.7 0 0 0 18-9.9V8a8 8 0 0 0 2-2.1Z"/></svg></a>
+        <a href="https://facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 22v-9h3l.5-3.5h-3.5V7.3c0-1 .3-1.8 1.8-1.8H18V2.4a21 21 0 0 0-2.5-.2c-2.5 0-4.3 1.6-4.3 4.5v2.8H8V13h3.2v9Z"/></svg></a>
+        <a href="https://instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="7" r="1"/></svg></a>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="welcome" aria-labelledby="hero-title">
+      <div class="hero__content container">
+        <h1 id="hero-title">Pastry with love</h1>
+        <div class="hero__divider" aria-hidden="true"></div>
+        <p>We’re bringing you fresh ingredients every<br class="desktop-break"> day in ways you can’t resist.</p>
+        <a class="button button--hero" href="#menu">Our menu</a>
+      </div>
+      <div class="hero__seal" aria-hidden="true"><img src="assets/images/bread-seal.png" alt=""><img class="hero__bread" src="assets/images/bread-icon.png" alt=""></div>
+    </section>
+
+    <section class="cakes" id="cakes" aria-labelledby="cakes-title">
+      <div class="container cakes__inner">
+        <div class="cakes__copy">
+          <h2 id="cakes-title">Art of cakes</h2>
+          <p class="eyebrow">We create delicious memories</p>
+          <p class="cakes__description">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
+          <h3 class="chef-title">Chef Cook</h3>
+          <div class="chef"><span>Benito</span><img src="assets/images/chef.jpg" alt="Chef Benito Gaspare" width="103" height="103" loading="lazy"><span>Gaspare</span></div>
+          <blockquote><span aria-hidden="true" class="quote quote--open">“</span>Unique creations for unique<br> occasions.<span aria-hidden="true" class="quote quote--close">”</span></blockquote>
+        </div>
+        <div class="cakes__gallery" id="gallery" role="group" aria-label="Fresh ingredients and handmade cakes">
+          <figure><img src="assets/images/flour.jpg" alt="Flour and a wooden scoop" width="298" height="253" loading="lazy"></figure>
+          <figure><img src="assets/images/egg.jpg" alt="Eggs and ingredients for baking" width="297" height="253" loading="lazy"></figure>
+          <figure><img src="assets/images/cake.jpg" alt="A slice of layered chocolate cake" width="298" height="253" loading="lazy"></figure>
+          <figure><img src="assets/images/strawberries.jpg" alt="Strawberry cakes with chocolate" width="297" height="253" loading="lazy"></figure>
+          <div class="cakes__seal"><span>Tastes so<br> good!</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pancakes" id="menu" aria-labelledby="pancakes-title">
+      <div class="container pancakes__inner">
+        <div class="pancake-card">
+          <div class="pancake-card__photo">
+            <img id="featured-food" src="assets/images/pancakes.jpg" alt="Pancakes with berries and maple syrup" width="397" height="513" loading="lazy">
+            <div class="rating" role="img" aria-label="Rated 4 out of 5 stars"><span aria-hidden="true">★<br>★<br>★<br>★<br>☆</span></div>
+          </div>
+          <div class="pancake-card__content">
+            <h2 id="pancakes-title">Tasty pancakes</h2>
+            <p class="eyebrow">Season favourite</p>
+            <p class="pancake-card__description">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+            <div class="food-slider" role="group" aria-label="Choose a food photo">
+              <button class="slider-arrow" type="button" data-slide-step="-1" aria-label="Previous photo">‹</button>
+              <div class="food-slider__items">
+                <button class="food-slider__item is-active" type="button" data-slide="0" aria-label="Show pancakes" aria-pressed="true"><img src="assets/images/pancake-slide.jpg" alt="" width="93" height="93" loading="lazy"></button>
+                <button class="food-slider__item" type="button" data-slide="1" aria-label="Show berries" aria-pressed="false"><img src="assets/images/berry-slide.jpg" alt="" width="93" height="93" loading="lazy"></button>
+                <button class="food-slider__item" type="button" data-slide="2" aria-label="Show fruit" aria-pressed="false"><img src="assets/images/fruit-slide.jpg" alt="" width="93" height="93" loading="lazy"></button>
+              </div>
+              <button class="slider-arrow" type="button" data-slide-step="1" aria-label="Next photo">›</button>
+            </div>
+          </div>
+          <div class="time-box time-box--pancakes"><span class="time-box__label">Ready in</span><strong>40</strong><span class="time-box__unit">mins</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="breakfast" id="breakfast" aria-labelledby="breakfast-title">
+      <div class="container breakfast__inner">
+        <div class="breakfast__menu">
+          <h2 id="breakfast-title">Breakfast</h2>
+          <p class="eyebrow">7am breakfast? We’re open!</p>
+          <ul class="breakfast__dishes">
+            <li><h3>Full breakfast</h3><p>Duis ut tortor, et risus, vulputate pretium</p><span class="price">$12.49</span></li>
+            <li><h3>Toast &amp; Jam</h3><p>Suspendisse, tempus, interdum</p><span class="price">$4.90</span></li>
+            <li><h3>Muffins</h3><p>Fusce eget dui sodales est</p><span class="price">$3.95</span></li>
+          </ul>
+        </div>
+        <article class="morning-card">
+          <div class="morning-card__est"><span>Est.</span><span>1893</span></div>
+          <div class="morning-card__ornament" aria-hidden="true"><span>♧</span></div>
+          <h2>Your morning<br>Escape with Flair</h2>
+          <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+          <button class="button button--outline" type="button" data-dialog="morning-dialog">Read</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="sandwich" id="sandwich" aria-labelledby="sandwich-title">
+      <div class="container">
+        <div class="sandwich__heading"><h2 id="sandwich-title">The Jibarito sandwich</h2><p class="eyebrow">The best sandwich you’ve ever tasted!</p></div>
+        <div class="sandwich__inner">
+          <div class="ingredients">
+            <article class="ingredient"><img src="assets/images/grain.jpg" alt="Golden grains" width="103" height="103" loading="lazy"><h3>Class aptent</h3><p>Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</p></article>
+            <article class="ingredient"><img src="assets/images/eggs.jpg" alt="Fresh eggs in a basket" width="103" height="103" loading="lazy"><h3>Nulla eget</h3><p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p></article>
+            <article class="ingredient"><img src="assets/images/cheese.jpg" alt="Cheese with fresh herbs" width="103" height="103" loading="lazy"><h3>Sed nibh purus</h3><p>Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</p></article>
+          </div>
+          <div class="sandwich__recipe">
+            <img class="sandwich__photo" src="assets/images/sandwich.jpg" alt="A fresh sandwich with ham, lettuce and tomato on a wooden table" width="843" height="558" loading="lazy">
+            <div class="sandwich__times">
+              <div class="time-box"><span class="time-box__label">Prep</span><strong>15</strong><span class="time-box__unit">mins</span></div>
+              <div class="time-box"><span class="time-box__label">Cook</span><strong>35</strong><span class="time-box__unit">mins</span></div>
+              <div class="time-box time-box--ready"><span class="time-box__label">Ready in</span><strong>50</strong><span class="time-box__unit">mins</span></div>
+            </div>
+            <button class="button button--recipe" type="button" data-dialog="recipe-dialog">Full recipe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contact">
+    <div class="container footer__inner">
+      <nav class="footer__nav" aria-label="Explore Gustoso"><a href="#menu">Our menu</a><span aria-hidden="true">~</span><a href="#gallery">Gallery</a><span aria-hidden="true">~</span><a href="#cakes">Culture</a></nav>
+      <a class="logo logo--footer" href="#welcome" aria-label="Gustoso home">Gustoso</a>
+      <nav class="footer__nav" aria-label="More from Gustoso"><a href="#breakfast">Events</a><span aria-hidden="true">~</span><a href="#sandwich">Catering</a><span aria-hidden="true">~</span><a href="#breakfast">Visit us</a></nav>
+    </div>
+  </footer>
+  <dialog class="dialog" id="morning-dialog" aria-labelledby="morning-dialog-title">
+    <button class="dialog__close" type="button" aria-label="Close dialog">×</button>
+    <p class="eyebrow">Gustoso · Est. 1893</p><h2 id="morning-dialog-title">Your morning Escape with Flair</h2>
+    <p>Begin your morning with fresh bread, warm pastries and a leisurely breakfast. Our breakfast menu is served from 7am.</p>
+    <a class="button button--outline" href="#breakfast" data-close-dialog>Explore breakfast</a>
+  </dialog>
+  <dialog class="dialog" id="recipe-dialog" aria-labelledby="recipe-dialog-title">
+    <button class="dialog__close" type="button" aria-label="Close dialog">×</button>
+    <p class="eyebrow">Prep 15 mins · Cook 35 mins</p><h2 id="recipe-dialog-title">The Jibarito sandwich</h2>
+    <p>A serving suggestion inspired by the sandwich in our bakery’s menu.</p>
+    <ol><li>Prepare fresh bread, ham, sliced tomato, lettuce and cheese.</li><li>Slice the bread and lightly toast it until golden.</li><li>Layer the cheese, ham and vegetables on the bread.</li><li>Close the sandwich and serve while the bread is warm.</li></ol>
+  </dialog>
+</body>
+</html>
